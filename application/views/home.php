@@ -1,6 +1,13 @@
 <?php 
     $this->load->view('nav');
  ?>
+ 
+ <!--Large Header Image!-->
+ <div class="container-img">
+		<img src="<?php echo base_url().'assets/img/homedanus.jpg'?>" alt="Home Image" class="w-100">
+		<div class="top-left home-text"><b>Harta sejati adalah kesehatan, bukan emas dan perak</b></div>
+		<div class="top-left mt-5 text-justify home-sub-text">Berobatlah agar kita tetap sehat selalu</div>
+	</div>
 
 <!--short description-->
 	<div class="container-fluid p-5 desc-container">

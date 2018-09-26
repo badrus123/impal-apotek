@@ -49,17 +49,12 @@
 				<button class="btn nav-search-btn" type="submit"><span class="oi oi-magnifying-glass" title="magnifying glass" aria-hidden="true"></span></button>
 			</form>
 			<div class="btn-group" role="group" aria-label="Basic example">
-				<a role="button" class="btn btn-login btn-link nav-btn mx-2" href="Login.html">Login</a>
-				<a class="btn btn-daftar btn-outline-primary rounded mr-4" href="regispelanggan.html">Daftar</a>
+				<a role="button" class="btn btn-login btn-link nav-btn mx-2" href="<?php echo site_url('Login')?>">Login</a>
+				<a class="btn btn-daftar btn-outline-primary rounded mr-4" href="">Daftar</a>
 			</div>
 		</div>
 	</nav>
-	<!--Large Header Image!-->
-	<div class="container-img">
-		<img src="<?php echo base_url().'assets/img/homedanus.jpg'?>" alt="Home Image" class="w-100">
-		<div class="top-left home-text"><b>Harta sejati adalah kesehatan, bukan emas dan perak</b></div>
-		<div class="top-left mt-5 text-justify home-sub-text">Berobatlah agar kita tetap sehat selalu</div>
-	</div>
+	
 
 	
 
