@@ -27,7 +27,7 @@
 			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
 				<form class="login100-form validate-form">
 					<span class="login100-form-title p-b-59">
-						Sign In
+						Masuk
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate="Username is required">
@@ -47,9 +47,9 @@
 							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
 							<label class="label-checkbox100" for="ckb1">
 								<span class="txt1">
-									I agree to the
+									Saya setuju dengan
 									<a href="#" class="txt2 hov1">
-										Terms of User
+										Peraturan sebagai pengguna 
 									</a>
 								</span>
 							</label>
@@ -62,12 +62,12 @@
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
 							<button class="btn btn-primary login100-form-btn">
-								Sign In
+								Masuk
 							</button>
 						</div>
 
 						<a href="<?php echo base_url().'Signup/index'?>" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
-							Create New Account? Sign Up
+							Buat akun baru? Daftar
 							<i class="fa fa-long-arrow-right m-l-5"></i>
 						</a>
 					</div>
