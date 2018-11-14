@@ -40,15 +40,15 @@
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item"><a href="<?php echo base_url().'Promo/index'?>" class="nav-link">promo</a></li>
-	          <li class="nav-item"><a href="<?php echo base_url().'Produk/index'?>" class="nav-link">produk</a></li>
-            <li class="nav-item"><a href="<?php echo base_url().'About/index'?>" class="nav-link">About</a></li>
-						<li class="nav-item"><a href="<?php echo base_url().'#'?>" class="nav-link">information</a></li>
+	          <li class="nav-item"><a href="<?php echo base_url().'Promo/index'?>" class="nav-link">Promo</a></li>
+	          <li class="nav-item"><a href="<?php echo base_url().'Produk/index'?>" class="nav-link">Produk</a></li>
+            <li class="nav-item"><a href="<?php echo base_url().'About/index'?>" class="nav-link">Tentang</a></li>
+						<li class="nav-item"><a href="<?php echo base_url().'#'?>" class="nav-link">Informasi</a></li>
             <div class="dropdown">
-								<li class="nav-item"><a href="#" class="nav-link">Sign In</a></li>
+								<li class="nav-item"><a href="#" class="nav-link">Masuk</a></li>
 								<div class="dropdown-content">
-									<a href="<?php echo base_url().'Signin/index'?>">Sign In</a>
-									<a href="<?php echo base_url().'Signup/index'?>">Register</a>
+									<a href="<?php echo base_url().'Signin/index'?>">Masuk</a>
+									<a href="<?php echo base_url().'Signup/index'?>">Daftar</a>
 								</div>
 					  </div>
           </ul>
