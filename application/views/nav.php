@@ -28,22 +28,23 @@
     <link rel="stylesheet" href="<?php echo base_url().'assets/css/icomoon.css'?>">
     <link rel="stylesheet" href="<?php echo base_url().'assets/css/style.css'?>">
     <link rel="stylesheet" href="<?php echo base_url().'assets/css/main.css'?>">
+    <link rel="stylesheet" href="<?php echo base_url().'assets/css/aneh.css'?>">
   </head>
   <body>
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="#">Apo<span>tek</span></a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	      <a class="navbar-brand" href="<?php echo base_url().'Home/index'?>"><img class="imgnav" src="<?php echo base_url().'assets/images/logo1.png'?>"></a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="<?php echo base_url().'assets/images/logo1.png'?>ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item"><a href="#" class="nav-link">promo</a></li>
-	          <li class="nav-item"><a href="#" class="nav-link">produk</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">information</a></li>
+	          <li class="nav-item"><a href="<?php echo base_url().'Promo/index'?>" class="nav-link">promo</a></li>
+	          <li class="nav-item"><a href="<?php echo base_url().'Produk/index'?>" class="nav-link">produk</a></li>
+            <li class="nav-item"><a href="<?php echo base_url().'About/index'?>" class="nav-link">About</a></li>
+						<li class="nav-item"><a href="<?php echo base_url().'#'?>" class="nav-link">information</a></li>
             <div class="dropdown">
 								<li class="nav-item"><a href="#" class="nav-link">Sign In</a></li>
 								<div class="dropdown-content">
