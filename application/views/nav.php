@@ -28,7 +28,6 @@
     <link rel="stylesheet" href="<?php echo base_url().'assets/css/icomoon.css'?>">
     <link rel="stylesheet" href="<?php echo base_url().'assets/css/style.css'?>">
     <link rel="stylesheet" href="<?php echo base_url().'assets/css/main.css'?>">
-    <link rel="stylesheet" href="<?php echo base_url().'assets/css/aneh.css'?>">
   </head>
   <body>
     
