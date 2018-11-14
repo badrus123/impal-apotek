@@ -47,8 +47,8 @@
             <div class="dropdown">
 								<li class="nav-item"><a href="#" class="nav-link">Sign In</a></li>
 								<div class="dropdown-content">
-									<a href="">Sign In</a>
-									<a href="">Register</a>
+									<a href="<?php echo base_url().'Signin/index'?>">Sign In</a>
+									<a href="<?php echo base_url().'Signup/index'?>">Register</a>
 								</div>
 					  </div>
           </ul>
