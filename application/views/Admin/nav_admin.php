@@ -28,6 +28,10 @@
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="<?php echo base_url().'admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css'?>">
   <link rel="stylesheet" href="<?php echo base_url().'assets/css/main.css'?>">
+  <!-- Bootstrap time Picker -->
+  <link rel="stylesheet" href="<?php echo base_url().'admin/plugins/timepicker/bootstrap-timepicker.min.css'?>">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="<?php echo base_url().'admin/bower_components/select2/dist/css/select2.min.css'?>">
 
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
@@ -324,14 +328,14 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
-        <li class="active treeview">
-          <a href="#">
+        <li>
+          <a href="<?php echo base_url().'Home_admin/index'?>">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
         </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-edit"></i> <span>Forms</span>
+        <li>
+          <a href="<?php echo base_url().'Form_obat/index'?>">
+            <i class="fa fa-edit"></i> <span>Form</span>
           </a>
         </li>
         <li class="treeview">
@@ -340,7 +344,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="<?php echo base_url().'Home_admin/index'?>">
             <i class="fa fa-calendar"></i> <span>Calendar</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-red">3</small>
