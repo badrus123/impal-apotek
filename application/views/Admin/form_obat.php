@@ -27,18 +27,23 @@
             <!-- /.box-header -->
             <div class="box-body">
                 <div class="row">
+                <form method="POST" action="<?php echo base_url('Form_obat/unggah'); ?>" enctype="multipart/form-data">
                     <div class="col-md-6">
+                        <div>
+                            <h4>id Obat</h4>
+                            <input  class="form-control select2" type="text" name="id_obat" placeholder="id obat" style=" width: 100%;">
+                        </div>
                         <div>
                             <h4>Nama Obat</h4>
                             <input  class="form-control select2" type="text" name="nama_obat" placeholder="nama obat" style=" width: 100%;">
                         </div>
                         <div class="form-group">
                             <label><h4>Tipe Obat</h4></label>
-                                <select class="form-control select2" style="width: 100%;">
-                                <option>PIL</option>
-                                <option>Sirup</option>
-                                <option>Tablet</option>
-                                <option>None</option>
+                                <select class="form-control select2" name="type_obat" style="width: 100%;">
+                                <option value="PIL">PIL</option>
+                                <option value="Sirup">Sirup</option>
+                                <option value="Tablet">Tablet</option>
+                                <option value="None">None</option>
                              </select>
                         </div>
                         <div>
@@ -49,37 +54,37 @@
                             <h4>Promo Obat</h4>
                             <input  class="form-control select2" type="text" name="promo_obat" placeholder="promo obat" style=" width: 100%;">
                         </div>
-                        <div class="form-group">
-                            <label><h4>Produk Obat</h4></label>
-                                <select class="form-control select2" style="width: 100%;">
-                                <option>Alat Kesehatan</option>
-                                <option>Bayi dan Anak</option>
-                                <option>Obat</option>
-                                <option>perawat Kecantikan</option>
-                                <option>personal</option>
-                                <option>Supleme</option>
-                             </select>
+                        <div>
+                            <h4>Sisa Obat</h4>
+                            <input  class="form-control select2" type="text" name="sisa_obat" placeholder="sisa obat" style=" width: 100%;">
                         </div>
                     </div>
 
                     <div class="col-md-6">
                         <div>
-                            <h4>Sisa Obat</h4>
-                            <input  class="form-control select2" type="text" name="sisa_obat" placeholder="sisa obat" style=" width: 100%;">
-                        </div>
-                        <div>
                             <h4>Deskripsi Obat</h4>
-                            <textarea class="form-control select2" rows="5" name="deskripsi_Obat" id="comment" placeholder="Tulis Deskripsi Obat"></textarea>
+                            <textarea class="form-control select2" rows="5" name="deskripsi_obat" id="comment" placeholder="Tulis Deskripsi Obat"></textarea>
                         </div>
                         <div>
                             <h4>Foto Obat</h4>
-                            <input type="file" name="foto_obat">
+                            <input type="file" name="image">
+                        </div>
+                        <div class="form-group">
+                            <label><h4>Produk Obat</h4></label>
+                                <select class="form-control select2" name="produk_obat" style="width: 100%;">
+                                <option value="Alat Kesehatan">Alat Kesehatan</option>
+                                <option value="Bayi dan Anak">Bayi dan Anak</option>
+                                <option value="Obat">Obat</option>
+                                <option value="Perawat Kecantikan">perawat Kecantikan</option>
+                                <option value="Personal">personal</option>
+                                <option value="Supleme">Supleme</option>
+                             </select>
                         </div>
                         <div>
                             </br>
-                            </br>
                             <input class="form-control select2 btn btn-primary" type="submit" value="submit" >
                         </div>
+                        </form>
                     </div>
                 </div>
             </div>

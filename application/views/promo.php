@@ -20,122 +20,27 @@
 	<br>
 	<div class="row" id="ads">
     <!-- Category Card -->
+    <?php foreach ($obat -> result() as  $value) { ?>
     <div class="col-md-4">
         <div class="card rounded">
             <div class="card-image">
-                <span class="card-notify-year">15%</span>
-                <img class="img-fluid" src="<?php echo base_url().'assets/images/bg_3.jpg'?>" />
+                <span class="card-notify-year"><?php echo $value->promo_obat ?>%</span>
+                <img class="img-fluid" src="<?php echo base_url().'obat/'.$value->image ?>" />
             </div>
             <div class="card-image-overlay m-auto">
-                <span class="card-detail-badge">PIL</span>
-                <span class="card-detail-badge">Rp 15000</span>
+                <span class="card-detail-badge"><?php echo $value->type_obat ?></span>
+                <span class="card-detail-badge"><?php echo $value->harga_obat ?></span>
                 <span class="card-detail-badge">expr 15 januari 2019</span>
             </div>
             <div class="card-body text-center">
                 <div class="ad-title m-auto">
-                    <h5>Honda Accord LX</h5>
+                    <h5><?php echo $value->nama_obat ?></h5>
                 </div>
                 <a class="ad-btn" href="#">View</a>
             </div>
         </div>
     </div>
-    <div class="col-md-4">
-        <div class="card rounded">
-            <div class="card-image">
-                <span class="card-notify-year">40%</span>
-                <img class="img-fluid" src="<?php echo base_url().'assets/images/bg_3.jpg'?>" />
-            </div>
-            <div class="card-image-overlay m-auto">
-                <span class="card-detail-badge">PIL</span>
-                <span class="card-detail-badge">Rp 15000</span>
-                <span class="card-detail-badge">expr 15 januari 2019</span>
-            </div>
-            <div class="card-body text-center">
-                <div class="ad-title m-auto">
-                    <h5>Honda CIVIC HATCHBACK</h5>
-                </div>
-                <a class="ad-btn" href="#">View</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="card rounded">
-            <div class="card-image">
-                <span class="card-notify-year">15%</span>
-                <img class="img-fluid" src="<?php echo base_url().'assets/images/bg_3.jpg'?>" />
-            </div>
-            <div class="card-image-overlay m-auto">
-                <span class="card-detail-badge">PIL</span>
-                <span class="card-detail-badge">$22,000.00</span>
-                <span class="card-detail-badge">8000 Kms</span>
-            </div>
-            <div class="card-body text-center">
-                <div class="ad-title m-auto">
-                    <h5>Honda Accord Hybrid</h5>
-                </div>
-                <a class="ad-btn" href="#">View</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="card rounded">
-            <div class="card-image">
-                <span class="card-notify-year">15%</span>
-                <img class="img-fluid" src="<?php echo base_url().'assets/images/bg_3.jpg'?>" />
-            </div>
-            <div class="card-image-overlay m-auto">
-                <span class="card-detail-badge">PIL</span>
-                <span class="card-detail-badge">Rp 15000</span>
-                <span class="card-detail-badge">expr 15 januari 2019</span>
-            </div>
-            <div class="card-body text-center">
-                <div class="ad-title m-auto">
-                    <h5>Honda Accord LX</h5>
-                </div>
-                <a class="ad-btn" href="#">View</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="card rounded">
-            <div class="card-image">
-                <span class="card-notify-year">40%</span>
-                <img class="img-fluid" src="<?php echo base_url().'assets/images/bg_3.jpg'?>" />
-            </div>
-            <div class="card-image-overlay m-auto">
-                <span class="card-detail-badge">PIL</span>
-                <span class="card-detail-badge">Rp 15000</span>
-                <span class="card-detail-badge">expr 15 januari 2019</span>
-            </div>
-            <div class="card-body text-center">
-                <div class="ad-title m-auto">
-                    <h5>Honda CIVIC HATCHBACK</h5>
-                </div>
-                <a class="ad-btn" href="#">View</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="card rounded">
-            <div class="card-image">
-                <span class="card-notify-year">15%</span>
-                <img class="img-fluid" src="<?php echo base_url().'assets/images/bg_3.jpg'?>" />
-            </div>
-            <div class="card-image-overlay m-auto">
-                <span class="card-detail-badge">PIL</span>
-                <span class="card-detail-badge">$22,000.00</span>
-                <span class="card-detail-badge">8000 Kms</span>
-            </div>
-            <div class="card-body text-center">
-                <div class="ad-title m-auto">
-                    <h5>Honda Accord Hybrid</h5>
-                </div>
-                <a class="ad-btn" href="#">View</a>
-            </div>
-        </div>
-    </div>
-
+    <?php } ?>
 </div>
 </div>
 
