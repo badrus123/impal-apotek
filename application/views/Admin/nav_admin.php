@@ -353,7 +353,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="<?php echo base_url().'Message_admin/index'?>">
             <i class="fa fa-envelope"></i> <span>Pesan</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-yellow">12</small>

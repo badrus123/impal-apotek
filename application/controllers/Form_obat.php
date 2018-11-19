@@ -59,7 +59,7 @@ class Form_obat extends CI_Controller {
         
              public function _rules() 
             {
-                $this->form_validation->set_rules('id', 'id', 'trim|required|callback_valid_id');
+                $this->form_validation->set_rules('id_obat', 'id_obat', 'trim|required|callback_valid_id');
                 $this->form_validation->set_rules('nama_obat', 'nama_obat', 'trim|required');
                 $this->form_validation->set_rules('type_obat', 'type_obat', 'trim|required');
                 $this->form_validation->set_rules('harga_obat', 'harga_obat', 'trim|required');
@@ -71,13 +71,13 @@ class Form_obat extends CI_Controller {
                 $this->form_validation->set_error_delimiters('<span class="text-danger">', '</span>');
             }
         
-            function valid_id($id)
+            function valid_id($id_obat)
                 {
-                    if ($this->obat_model->valid_id($id) == TRUE)
+                    if ($this->obat_model->valid_id($id_obat) == TRUE)
                     {
                         
                         // echo 'valid_id', "kode guruadm dengan Kode $kodeguru sudah terdaftar";
-                        $this->form_validation->set_message('valid_id', "id dengan $id sudah terdaftar");
+                        $this->form_validation->set_message('valid_id', "id dengan $id_obat sudah terdaftar");
                         return FALSE;
                     }
                     else
