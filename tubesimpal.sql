@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 14 Nov 2018 pada 10.07
--- Versi Server: 10.1.26-MariaDB
--- PHP Version: 7.1.9
+-- Generation Time: 19 Nov 2018 pada 07.32
+-- Versi Server: 10.1.28-MariaDB
+-- PHP Version: 7.1.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -29,16 +29,25 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `obat` (
-  `Id_Obat` int(10) NOT NULL,
-  `Nama_Obat` varchar(50) NOT NULL,
-  `Type_Obat` int(50) NOT NULL,
-  `Harga_Obat` int(50) NOT NULL,
-  `Discount_Obat` int(50) NOT NULL,
-  `Sisa_Obat` int(50) NOT NULL,
-  `Deskripsi_Obat` text NOT NULL,
-  `Foto_Obat` varchar(50) NOT NULL,
-  `Produk_Obat` varchar(50) NOT NULL
+  `Id_Obat` varchar(10) NOT NULL,
+  `nama_obat` varchar(50) NOT NULL,
+  `type_obat` varchar(50) NOT NULL,
+  `harga_obat` int(50) NOT NULL,
+  `promo_obat` int(50) NOT NULL,
+  `sisa_obat` int(50) NOT NULL,
+  `deskripsi_obat` text NOT NULL,
+  `image` varchar(50) NOT NULL,
+  `produk_obat` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `obat`
+--
+
+INSERT INTO `obat` (`Id_Obat`, `nama_obat`, `type_obat`, `harga_obat`, `promo_obat`, `sisa_obat`, `deskripsi_obat`, `image`, `produk_obat`) VALUES
+('123', 'asd', 'None', 23, 12, 34, 'Facere sit accusamus expedita cupiditate sapiente molestias dignissimos occaecat repellendus Dolorem sed iste sit culpa quis omnis qui provident id', 'file_1542417325.jpg', 'Perawat Kecantikan'),
+('2', 'paracetamol', 'PIL', 123, 123, 213, 'dadasdasdasdasdasdasdasdasdadasdasda', 'file_1542412747.jpg', 'Alat Kesehatan'),
+('zfSz', 'obattttt', 'PIL', 56, 56, 677, 'hydhfu', 'file_1542431973.jpg', 'Alat Kesehatan');
 
 -- --------------------------------------------------------
 
@@ -77,16 +86,6 @@ ALTER TABLE `obat`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`username`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `obat`
---
-ALTER TABLE `obat`
-  MODIFY `Id_Obat` int(10) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

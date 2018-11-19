@@ -14,6 +14,6 @@ class Produk extends CI_Controller {
                         'obat' => $this->produk_model->get_data()
                         ); 
                              
-                $this->load->view('home', $data);
+                $this->load->view('produk', $data);
         }
 }

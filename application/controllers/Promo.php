@@ -9,11 +9,12 @@ class Promo extends CI_Controller {
 
         public function index()
         {  		
-                $data = array(
-                        'title' => 'Data obat',
-                        'obat' => $this->promo_model->get_data()
-                        );        
+                $promo = array(
+                        'title' => 'Data promo 10%',
+                        'promo_10' => $this->promo_model->get_diskon_10(),
+                        'promo_50' => $this->promo_model->get_diskon_50()
+                        );      
                         
-                $this->load->view('promo', $data);
+                $this->load->view('promo', $promo);
         }
 }

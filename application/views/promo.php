@@ -16,11 +16,11 @@
     </section>
 <div class="container">
     <br>
-    <h2 align="center">Promo Obat november</h2>
+    <h2 align="center">Promo Obat 10-50%</h2>
 	<br>
 	<div class="row" id="ads">
     <!-- Category Card -->
-    <?php foreach ($obat -> result() as  $value) { ?>
+    <?php foreach ($promo_10 -> result() as  $value) { ?>
     <div class="col-md-4">
         <div class="card rounded">
             <div class="card-image">
@@ -42,6 +42,33 @@
     </div>
     <?php } ?>
 </div>
+    <br>
+    <h2 align="center">Promo Obat 50-100%</h2>
+	<br>
+    <div class="row" id="ads">
+    <!-- Category Card -->
+    <?php foreach ($promo_50 -> result() as  $value) { ?>
+    <div class="col-md-4">
+        <div class="card rounded">
+            <div class="card-image">
+                <span class="card-notify-year"><?php echo $value->promo_obat ?>%</span>
+                <img class="img-fluid" src="<?php echo base_url().'obat/'.$value->image ?>" />
+            </div>
+            <div class="card-image-overlay m-auto">
+                <span class="card-detail-badge"><?php echo $value->type_obat ?></span>
+                <span class="card-detail-badge"><?php echo $value->harga_obat ?></span>
+                <span class="card-detail-badge">expr 15 januari 2019</span>
+            </div>
+            <div class="card-body text-center">
+                <div class="ad-title m-auto">
+                    <h5><?php echo $value->nama_obat ?></h5>
+                </div>
+                <a class="ad-btn" href="#">View</a>
+            </div>
+        </div>
+    </div>
+    <?php } ?>
+    </div>
 </div>
 
 <?php 
