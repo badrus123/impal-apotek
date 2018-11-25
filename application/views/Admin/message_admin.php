@@ -115,7 +115,9 @@
                 <div class="incoming_msg_img"> <img class="img-circle" src="<?php echo base_url().'admin/dist/img/user2-160x160.jpg'?>" alt="sunil"> </div>
                 <div class="received_msg">
                     <div class="received_withd_msg">
-                    <p>Test, which is a new approach to have</p>
+                    <p>ok kak coba lihat??
+                        
+                    </p>
                     <span class="time_date"> 11:01 AM    |    Yesterday</span></div>
                 </div>
                 </div>

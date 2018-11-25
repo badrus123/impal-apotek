@@ -113,7 +113,7 @@
                    <h3 class="card-title"><?php echo $value->nama_obat ?></h3>
                    <h6 class="card-subtitle text-muted pb-3"><?php echo $value->type_obat ?></h6>
                    <p class="card-text pt-2">
-                     Paracetamol adalah obat yang biasanya digunakan untuk mengobati rasa sakit ringan hingga sedang, mulai dari sakit kepala, nyeri haid, sakit gigi, nyeri sendi, dan nyeri yang dirasakan selama flu.Paracetamol juga bisa digunakan untuk meredakan demam.
+                   <?php echo $value->deskripsi_obat ?>
                    </p>
                    <div>
                      <ul class="list-inline">

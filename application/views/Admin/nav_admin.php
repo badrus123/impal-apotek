@@ -335,12 +335,12 @@
         </li>
         <li>
           <a href="<?php echo base_url().'Form_obat/index'?>">
-            <i class="fa fa-edit"></i> <span>Form</span>
+            <i class="fa fa-edit"></i> <span>Form Obat</span>
           </a>
         </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-table"></i> <span>Tables</span>
+        <li>
+          <a href="<?php echo base_url().'TableObat_admin/index'?>">
+            <i class="fa fa-table"></i> <span>Tables Obat</span>
           </a>
         </li>
         <li>
@@ -354,7 +354,7 @@
         </li>
         <li>
           <a href="<?php echo base_url().'Message_admin/index'?>">
-            <i class="fa fa-envelope"></i> <span>Pesan</span>
+            <i class="fa fa-envelope"></i> <span>Pesan Konsumen</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-yellow">12</small>
               <small class="label pull-right bg-green">16</small>

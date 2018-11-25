@@ -13,6 +13,8 @@ class Form_obat extends CI_Controller {
                 $this->load->view('Admin/form_obat');
         }
         public function unggah(){
+            rules();
+            valid_id();
                 $this->load->library('upload');
                 $nmfile = "file_".time(); //nama file saya beri nama langsung dan diikuti fungsi time
                 $config['upload_path'] = './obat/'; //path folder
@@ -57,7 +59,7 @@ class Form_obat extends CI_Controller {
                 }
             }
         
-             public function _rules() 
+             public function rules() 
             {
                 $this->form_validation->set_rules('id_obat', 'id_obat', 'trim|required|callback_valid_id');
                 $this->form_validation->set_rules('nama_obat', 'nama_obat', 'trim|required');
