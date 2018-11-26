@@ -81,7 +81,7 @@
         <div class = "col-sm-12">
           <center> <h1 class="  ">OUR ACHIEVEMENT</h1> </center>
             <div class="items-leading clearfix ">
-              <img src="assets/images/piala.png" height ="500px" align="center" />
+              <img src="<?php echo base_url().'assets/images/piala.png'?>" height ="500px" align="center" />
             </div>
         </div>
 
