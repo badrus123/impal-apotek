@@ -1,12 +1,11 @@
 <?php
-class C_Akun extends CI_Controller
+class Akun extends CI_Controller
 {
     public function __construct()
     {
         parent::__construct();
         $this->load->model('akun_model');
     }
-
 
     public function index()
     {

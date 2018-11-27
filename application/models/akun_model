@@ -1,6 +1,6 @@
 <?php
 
-class M_Akun extends CI_Model
+class akun_model extends CI_Model
 {
     public function daftar_akun($data)
     {
