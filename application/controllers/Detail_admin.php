@@ -7,7 +7,7 @@ class Detail_admin extends CI_Controller {
             $this->load->model('Detail_admin_model');
         }
 
-        public function index()
+        public function index($id_obat)
         {  	
                 $item['obat'] = $this->Detail_admin_model->get_data($id_obat);	
                 $data = array(
