@@ -78,7 +78,7 @@
 				<h4 class="mb-2">Type obat</h4>
 				<a><?php echo $value->type_obat ?><br></a>
 				<h4 class="mb-2">Produk Obat</h4>
-				<a class=><?php echo $value->produk_obat ?><br></a>
+				<a><?php echo $value->produk_obat ?><br></a>
 			</div>
 		</div>
 	</div>

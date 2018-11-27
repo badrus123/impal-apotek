@@ -93,46 +93,60 @@
               </div>
             </div>
             <!-- /.box-header -->
+           <?php foreach ($obat -> result() as  $value) { ?> 
             <div class="box-body">
               <div class="table-responsive">
-                <table class="table no-margin">
-                  <thead>
-                  <tr>
-                    <th>ID Obat</th>
-                    <th>nama obat</th>
-                    <th>tipe obat</th>
-                    <th>harga obat</th>
-                    <th>promo obat</th>
-                    <th>sisa obat</th>
-                    <th>produk obat</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <?php foreach ($obat -> result() as  $value) { ?>
-                  <tr>
-                    <td><a href="<?php echo site_url("Detail_admin/index/".$value->id_obat) ?>"><?php echo $value->id_obat ?></a></td>
-                    <td><?php echo $value->nama_obat ?></td>
-                    <td><?php echo $value->type_obat ?></td>
-                    <td><?php echo $value->harga_obat ?></td>
-                    <td><?php echo $value->promo_obat ?></td>
-                    <td><?php echo $value->sisa_obat ?></td>
-                    <td><?php echo $value->produk_obat ?></td>
-                  </tr>
-                  <?php } ?>
-                  </tbody>
-                </table>
+              	 <div class="col-md-12">
+                            <div>
+                                <h4>id Obat</h4>
+                                <p><?php echo $value->id_obat ?></p>
+                            </div>
+                            <div>
+                                <h4>Nama Obat</h4>
+                                <p><?php echo $value->nama_obat ?></p>
+                            </div>
+                            <div>
+                                <h4>Tipe Obat</h4>
+ 								<p><?php echo $value->tipe_obat ?></p>
+                            </div>
+                            <div>
+                                <h4>Harga Obat</h4>
+                                <p><?php echo $value->harga_obat ?></p>
+                            </div>
+                            <div>
+                                <h4>Promo Obat</h4>
+                                <p><?php echo $value->promo_obat ?></p>
+                            </div>
+                            <div>
+                                <h4>Sisa Obat</h4>
+                                <p><?php echo $value->sisa_obat ?></p>
+                            </div>
+                            <div>
+                                <h4>produk Obat</h4>
+                                <p><?php echo $value->produk_obat ?></p>
+                            </div>
+                            <div>
+                                <h4>Deskripsi Obat</h4>
+                                <p><?php echo $value->deskripsi_obat ?></p>
+                            </div>
+                        </div>
+
+
+
+
               </div>
               <!-- /.table-responsive -->
             </div>
             <!-- /.box-body -->
             <div class="box-footer clearfix">
-              <a href="<?php echo base_url().'Form_obat/index'?>" class="btn btn-sm btn-info btn-flat pull-left">Place New Order</a>
+              <a href="" class="btn btn-sm btn-info btn-flat pull-left">Place New Order</a>
               <a href="#" class="btn btn-sm btn-default btn-flat pull-right">View All Orders</a>
             </div>
             <!-- /.box-footer -->
           </div>
           <!-- /.box -->
         </div>
+         <?php } ?>
 </div>
 
 <?php 

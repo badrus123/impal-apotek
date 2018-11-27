@@ -13,13 +13,11 @@ class Form_obat extends CI_Controller {
                 $this->load->view('Admin/form_obat');
         }
         public function unggah(){
-            rules();
-            valid_id();
                 $this->load->library('upload');
                 $nmfile = "file_".time(); //nama file saya beri nama langsung dan diikuti fungsi time
                 $config['upload_path'] = './obat/'; //path folder
                 $config['allowed_types'] = 'jpg|png|jpeg|bmp'; //type yang dapat diakses bisa anda sesuaikan
-                $config['max_size'] = 2048; //maksimum besar file 2M
+                $config['max_size'] = 5000; //maksimum besar file 2M
                 $config['max_width']  = 1288; //lebar maksimum 1288 px
                 $config['max_height']  = 768; //tinggi maksimu 768 px
                 $config['file_name'] = $nmfile; //nama yang terupload nantinya
@@ -71,6 +69,7 @@ class Form_obat extends CI_Controller {
                 $this->form_validation->set_rules('image', 'image', 'trim|required');
                 $this->form_validation->set_rules('produk_obat', 'produk_obat', 'trim|required');
                 $this->form_validation->set_error_delimiters('<span class="text-danger">', '</span>');
+                redirect('Form_obat');
             }
         
             function valid_id($id_obat)
