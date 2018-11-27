@@ -555,3 +555,50 @@ img{ max-width:100%;}
   height: 516px;
   overflow-y: auto;
 }
+
+/**Page Detail**/
+
+
+
+.event-title{
+	padding-left: 8%;
+	margin-top: 7%;
+}
+
+.event-name{
+	font-weight: 700;
+}
+
+.event-creator{
+	font-weight: 700;
+	color:#9E9E9E;	
+}
+
+.event-logo{
+	width: 3%;
+	height: 3%;
+}
+
+.carousel-item img{
+	width: 100px;
+	height: 400px;
+}
+
+.card-summary{
+	padding-right: 5%;
+}
+
+.card-event-subtitle{
+	font-size: 18px;
+}
+
+.btn-help-danus{
+	background-color: #05728f;
+	font-weight: 700;
+	color: #FFFFFF !important;
+}
+
+.detail-content{
+	background-color: #FFFFFF;
+}
+

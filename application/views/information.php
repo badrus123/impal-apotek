@@ -3,26 +3,12 @@
 ?>
 
 
-    <section class="home-slider owl-carousel">
-      <div class="slider-item" style="background-image: url('<?php echo base_url().'assets/images/bg_1.jpg'?>">
+<section class="home-slider owl-carousel">
+      <div class="slider-item bread-item" style="background-image: url('<?php echo base_url().'assets/images/bg_2.jpg'?>" data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
-        <div class="container">
-          <div class="row slider-text align-items-center" data-scrollax-parent="true">
-            <div class="col-md-6 col-sm-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-              <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Harta sejati adalah kesehatan, bukan emas dan perak</h1>
-              <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Berobatlah agar kita tetap sehat selalu</p>
-             </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="slider-item" style="background-image: url('<?php echo base_url().'assets/images/bg_2.jpg'?>">
-        <div class="overlay"></div>
-        <div class="container">
-          <div class="row slider-text align-items-center" data-scrollax-parent="true">
-            <div class="col-md-6 col-sm-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-              <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Harta sejati adalah kesehatan, bukan emas dan perak</h1>
-              <p class="mb-4">Berobatlah agar kita tetap sehat selalu</p>
+        <div class="container" data-scrollax-parent="true">
+          <div class="row slider-text align-items-end">
+            <div class="col-md-7 col-sm-12 ftco-animate mb-5">
             </div>
           </div>
         </div>
@@ -78,15 +64,88 @@
 	          </form>
     			</div>
     		</div>
-        <div class = "col-sm-12">
-          <center> <h1 class="  ">OUR ACHIEVEMENT</h1> </center>
-            <div class="items-leading clearfix ">
-              <img src="<?php echo base_url().'assets/images/piala.png'?>" height ="500px" align="center" />
-            </div>
-        </div>
-
-
     	</div>
+    </section>
+    <section>
+    <div class="container">
+<h3 class=" text-center">Pesan untuk Admin</h3>
+<div class="messaging">
+      <div class="inbox_msg">
+        <div class="inbox_people">
+          <div class="headind_srch">
+            <div class="recent_heading">
+              <h4>Recent</h4>
+            </div>
+            <div class="srch_bar">
+              <div class="stylish-input-group">
+                <input type="text" class="search-bar"  placeholder="Search" >
+                <span class="input-group-addon">
+                <button type="button"> <i class="fa fa-search" aria-hidden="true"></i> </button>
+                </span> </div>
+            </div>
+          </div>
+          <div class="inbox_chat">
+            <div class="chat_list active_chat">
+              <div class="chat_people">
+                <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                <div class="chat_ib">
+                  <h5>Admin <span class="chat_date">Dec 25</span></h5>
+                  <p>Test, which is a new approach to have all solutions 
+                    astrology under one roof.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mesgs">
+          <div class="msg_history">
+            <div class="incoming_msg">
+              <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+              <div class="received_msg">
+                <div class="received_withd_msg">
+                  <p>Test which is a new approach to have all
+                    solutions</p>
+                  <span class="time_date"> 11:01 AM    |    June 9</span></div>
+              </div>
+            </div>
+            <div class="outgoing_msg">
+              <div class="sent_msg">
+                <p>Test which is a new approach to have all
+                  solutions</p>
+                <span class="time_date"> 11:01 AM    |    June 9</span> </div>
+            </div>
+            <div class="incoming_msg">
+              <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+              <div class="received_msg">
+                <div class="received_withd_msg">
+                  <p>Test, which is a new approach to have</p>
+                  <span class="time_date"> 11:01 AM    |    Yesterday</span></div>
+              </div>
+            </div>
+            <div class="outgoing_msg">
+              <div class="sent_msg">
+                <p>Apollo University, Delhi, India Test</p>
+                <span class="time_date"> 11:01 AM    |    Today</span> </div>
+            </div>
+            <div class="incoming_msg">
+              <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+              <div class="received_msg">
+                <div class="received_withd_msg">
+                  <p>We work directly with our designers and suppliers,
+                    and sell direct to you, which means quality, exclusive
+                    products, at a price anyone can afford.</p>
+                  <span class="time_date"> 11:01 AM    |    Today</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="type_msg">
+            <div class="input_msg_write">
+              <input type="text" class="write_msg" placeholder="Type a message" />
+              <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
  <?php 
