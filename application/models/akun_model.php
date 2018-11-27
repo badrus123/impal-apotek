@@ -37,15 +37,15 @@ class akun_model extends CI_Model
 
     public function check_user($data)
     {
-            $this->db->where('username', $data['username']);
-            $this->db->where('password', $data['password']);
+        $this->db->where('username', $data['username']);
+        $this->db->where('password', $data['password']);
  
-            $query = $this->db->get('user');
+        $query = $this->db->get('user');
 
-            if($query->num_rows()== 1) {
-                return $query->row(0);
-            } else {
-                return FALSE;
-            }
+        if($query->num_rows()== 1) {
+            return $query->row(0);
+        } else {
+            return FALSE;
+        }
     }
 }

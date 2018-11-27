@@ -25,14 +25,14 @@
 			<div class="login100-more" style="background-image: url('<?php echo base_url().'login/images/bg-01.jpg'?>');"></div>
 
 			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
-				<form class="login100-form validate-form">
+				<form class="login100-form validate-form" method="POST" action="<?php echo base_url('Akun/add'); ?>" enctype="multipart/form-data">
 					<span class="login100-form-title p-b-59">
 						Daftar
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate="Name is required">
 						<span class="label-input100">Nama Lengkap</span>
-						<input class="input100" type="text" name="name" placeholder="Nama lengkap...">
+						<input class="input100" type="text" name="fullname" placeholder="Nama lengkap...">
 						<span class="focus-input100"></span>
 					</div>
 
@@ -50,7 +50,7 @@
 
 					<div class="wrap-input100 validate-input" data-validate = "Password is required">
 						<span class="label-input100">Password</span>
-						<input class="input100" type="text" name="pass" placeholder="*************">
+						<input class="input100" type="text" name="password" placeholder="*************">
 						<span class="focus-input100"></span>
 					</div>
 

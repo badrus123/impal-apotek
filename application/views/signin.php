@@ -25,7 +25,7 @@
 			<div class="login100-more" style="background-image: url('<?php echo base_url().'login/images/bg-01.jpg'?>"></div>
 
 			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
-				<form class="login100-form validate-form">
+				<form class="login100-form validate-form" method="POST" action="<?php echo base_url('Akun/cek_login'); ?>" enctype="multipart/form-data">
 					<span class="login100-form-title p-b-59">
 						Masuk
 					</span>
