@@ -12,7 +12,7 @@
       </h1>
       <ol class="breadcrumb">
         <li><a href="<?php echo base_url().'Home_admin/index'?>"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Dashboard</li>
+        <li class="active">Detail Obat</li>
       </ol>
     </section>
 
@@ -22,7 +22,7 @@
  <!-- TABLE: LATEST ORDERS -->
  <div class="box box-info">
             <div class="box-header with-border">
-              <h3 class="box-title">Latest Orders</h3>
+              <h3 class="box-title">Detail Obat</h3>
 
               <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -34,6 +34,9 @@
             <div class="box-body">
               <div class="table-responsive">
               	 <div class="col-md-12">
+                            <div align="center">
+                                <img class="adminDetail" src="<?php echo base_url().'obat/'.$value->image ?>" style=" width:50%; ">
+                            </div>
                             <div>
                                 <h4>id Obat</h4>
                                 <p><?php echo $value->id_obat ?></p>
@@ -76,8 +79,8 @@
             </div>
             <!-- /.box-body -->
             <div class="box-footer clearfix">
-              <a href="" class="btn btn-sm btn-info btn-flat pull-left">Place New Order</a>
-              <a href="#" class="btn btn-sm btn-default btn-flat pull-right">View All Orders</a>
+              <a href="<?php echo base_url().'Form_obat/index'?>" class="btn btn-sm btn-info btn-flat pull-left">Place New Order</a>
+              <a href="<?php echo base_url().'TableObat_admin/index'?>" class="btn btn-sm btn-default btn-flat pull-right">View All Orders</a>
             </div>
             <!-- /.box-footer -->
           </div>

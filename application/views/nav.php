@@ -48,7 +48,7 @@
 								<li class="nav-item"><a href="#" class="nav-link">Masuk</a></li>
 								<div class="dropdown-content">
 									<a href="<?php echo base_url().'Akun/index'?>">Masuk</a>
-									<a href="<?php echo base_url().'Signup/index'?>">Daftar</a>
+									<a href="<?php echo base_url().'Akun/daftar_view'?>">Daftar</a>
 								</div>
 					  </div>
           </ul>

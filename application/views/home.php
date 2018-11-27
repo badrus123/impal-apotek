@@ -105,45 +105,49 @@
          <div class="card-deck">
            <div id="list-event-card" class="row">
              <!--TEMPLATE FOR DYNAMIC CARD LIST-->
-             <?php foreach ($obat -> result() as  $value) { ?> 
-             <div class="col-lg-4 col-md-6 col-sm-6 pb-5">
-               <div class="card">
-                 <a class="img-popup-link" href="<?php echo base_url().'obat/'.$value->image ?>"><img class="card-img-top" src="<?php echo base_url().'obat/'.$value->image ?>" alt= class="card-img-top""Card image cap"></a>
-                 <div class="card-body">
-                   <h3 class="card-title"><?php echo $value->nama_obat ?></h3>
-                   <h6 class="card-subtitle text-muted pb-3"><?php echo $value->type_obat ?></h6>
-                   <p class="card-text pt-2">
-                   <?php echo $value->deskripsi_obat ?>
-                   </p>
-                   <div>
-                     <ul class="list-inline">
-                       <li class="list-inline-item text-center card-list-border card-list-footer">
-                         <a class="card-list-text"><b>Harga</br></b></a>
-                         <a class="card-list-subtext"><?php echo $value->harga_obat ?></a>
-                       </li>
-                       <li class="list-inline-item text-center card-list-border card-list-footer">
-                         <a class="card-list-text"><b>Discount</br></b></a>
-                         <a class="card-list-subtext"><?php echo $value->promo_obat ?></a>
-                       </li>
-                       <li class="list-inline-item list-subtext3 text-center card-list-footer">
-                         <a class="card-list-text"><b>Sisa</br></b></a>
-                         <a class="card-list-subtext"><?php echo $value->sisa_obat ?></a>
-                       </li>
-                     </ul>
-                   </div>
-                   <a href="<?php echo site_url("Detail_user/index/".$value->id_obat) ?>" class="event-card-link"></a>
+             <?php $i = 1;?>
+             <?php foreach ($obat -> result() as  $value) { ?>
+              <?php if($i <= 6){?>  
+                <div class="col-lg-4 col-md-6 col-sm-6 pb-5">
+                  <div class="card">
+                    <a class="img-popup-link" href="<?php echo base_url().'obat/'.$value->image ?>"><img class="card-img-top" src="<?php echo base_url().'obat/'.$value->image ?>" alt= class="card-img-top""Card image cap"></a>
+                    <div class="card-body">
+                      <h3 class="card-title"><?php echo $value->nama_obat ?></h3>
+                      <h6 class="card-subtitle text-muted pb-3"><?php echo $value->type_obat ?></h6>
+                      <p class="card-text pt-2">
+                      <?php echo $value->deskripsi_obat ?>
+                      </p>
+                      <div>
+                        <ul class="list-inline">
+                          <li class="list-inline-item text-center card-list-border card-list-footer">
+                            <a class="card-list-text"><b>Harga</br></b></a>
+                            <a class="card-list-subtext"><?php echo $value->harga_obat ?></a>
+                          </li>
+                          <li class="list-inline-item text-center card-list-border card-list-footer">
+                            <a class="card-list-text"><b>Discount</br></b></a>
+                            <a class="card-list-subtext"><?php echo $value->promo_obat ?></a>
+                          </li>
+                          <li class="list-inline-item list-subtext3 text-center card-list-footer">
+                            <a class="card-list-text"><b>Sisa</br></b></a>
+                            <a class="card-list-subtext"><?php echo $value->sisa_obat ?></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <a href="<?php echo site_url("Detail_user/index/".$value->id_obat) ?>" class="event-card-link"></a>
+                    </div>
+                  </div>
                 </div>
-               </div>
-             </div>
-               <?php } ?>
+              <?php $i++;} ?>
+             <?php } ?>
              </div>
            </div>
          </div>
            <div align="center" >
-             <a  role="button" class="btn btn-outline-warning btn-dropdown mx-auto" href="">Lihat Semua</a>
+              <a role="button" class="btn btn-outline-warning btn-dropdown mx-auto">Lihat Semua</a>
          </div>
        </div>
 </section>
+
  <?php 
  $this->load->view('footer');
 ?>

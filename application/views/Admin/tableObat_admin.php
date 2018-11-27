@@ -17,7 +17,7 @@
     </section>
     <br>
  <!-- TABLE: LATEST ORDERS -->
- <div class="box box-info">
+<div class="box box-info">
             <div class="box-header with-border">
               <h3 class="box-title">Latest Orders</h3>
 
@@ -45,7 +45,7 @@
                   <tbody>
                   <?php foreach ($obat -> result() as  $value) { ?>
                   <tr>
-                    <td><a href="#"><?php echo $value->id_obat ?></a></td>
+                    <td><a href="<?php echo site_url("Detail_admin/index/".$value->id_obat) ?>"><?php echo $value->id_obat ?></a></td>
                     <td><?php echo $value->nama_obat ?></td>
                     <td><?php echo $value->type_obat ?></td>
                     <td><?php echo $value->harga_obat ?></td>
@@ -61,10 +61,8 @@
               </div>
               <!-- /.table-responsive -->
             </div>
-            <!-- /.box-footer -->
-          </div>
           <!-- /.box -->
-        </div>
+</div>
           <!-- The Modal -->
   <div class="modal" id="myModal">
     <div class="modal-dialog">

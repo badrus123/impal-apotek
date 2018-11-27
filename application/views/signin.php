@@ -66,7 +66,7 @@
 							</button>
 						</div>
 
-						<a href="<?php echo base_url().'Signup/index'?>" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
+						<a href="<?php echo base_url().'Akun/daftar_view'?>" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
 							Buat akun baru? Daftar
 							<i class="fa fa-long-arrow-right m-l-5"></i>
 						</a>
