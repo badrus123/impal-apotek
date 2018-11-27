@@ -36,7 +36,7 @@
                 <div class="ad-title m-auto">
                     <h5><?php echo $value->nama_obat ?></h5>
                 </div>
-                <a class="ad-btn" href="#">View</a>
+                <a class="ad-btn" href="<?php echo site_url("Detail_user/index/".$value->id_obat) ?>">View</a>
             </div>
         </div>
     </div>
@@ -63,7 +63,7 @@
                 <div class="ad-title m-auto">
                     <h5><?php echo $value->nama_obat ?></h5>
                 </div>
-                <a class="ad-btn" href="#">View</a>
+                <a class="ad-btn" href="<?php echo site_url("Detail_user/index/".$value->id_obat) ?>">View</a>
             </div>
         </div>
     </div>

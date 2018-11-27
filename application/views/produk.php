@@ -134,7 +134,7 @@
                        </li>
                      </ul>
                    </div>
-                   <a href="#" class="event-card-link"></a>
+                   <a href="<?php echo site_url("Detail_user/index/".$value->id_obat) ?>" class="event-card-link"></a>
                 </div>
                </div>
              </div>
