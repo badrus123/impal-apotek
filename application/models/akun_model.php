@@ -24,15 +24,12 @@ class akun_model extends CI_Model
     }
 
     public function login_akun($data){
-        $this->db->where('username',$data['username']);
-        $this->db->where('password',$data['password']);
-
-        $result = $this->db->get('user');
-        if($result->num_rows()==1){
-            return $result->row(0);
-        }else{
-            return false;
-        }
+        $this->db->select('*');
+        $this->db->from('user');
+        // $this->db->where('username',$username);
+        // $this->db->where('password',$password);
+        $result = $this->db->get();
+        return $result;
     }
 
     public function check_user($data)

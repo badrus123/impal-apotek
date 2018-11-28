@@ -31,8 +31,8 @@ class Akun extends CI_Controller
                     $tht=$login_akun->result();          
                     $sess_data = array(
                     'logged_in' => "Sudah Login",
-                    'fullname' => $users->fullname,
-                    'email' => $tht[0]->email,
+                    'fullname' => $fullname->fullname,
+                    'email' =>    $tht[0]->email,
                     'username' => $tht[0]->username,
                     'password' => $tht[0]->password,
                     'level' => "user",

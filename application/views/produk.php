@@ -1,6 +1,11 @@
 <?php 
- $this->load->view('nav');
-?>
+  if ($this->session->userdata('logged_in')=='Sudah Login') {
+    $this->load->view('nav_logout');
+  }else{
+    $this->load->view('nav');
+  }
+ 
+ ?>
 <section class="home-slider owl-carousel">
       <div class="slider-item bread-item" style="background-image: url('<?php echo base_url().'assets/images/bg_2.jpg'?>" data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
