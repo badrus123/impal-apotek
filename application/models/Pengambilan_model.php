@@ -1,20 +1,17 @@
 <?php 
-defined('BASEPATH') or exit('No direct script access allowed');
-/**
-* 
-*/
-class home_model extends CI_Model
-{    
-	public $table = 'pengambilan_obat';
-    public $order = 'DESC';
-	public function get_data()
-	{
-		$this->db->select('*');
-        $this->db->from('obat');
+if (!defined('BASEPATH'))
+    exit('No direct script access allowed');
+ 
+class Pengambilan_model extends CI_Model{   
 
-        $query = $this->db->get();
-        return $query;
-	}
+    public $table = 'pengambilan_obat';
+    public $order = 'DESC';
+
+    function __construct()
+    {
+        parent::__construct();
+    }
+
     function input_data($data,$table){
         $this->db->insert($table,$data);
     }
@@ -40,7 +37,6 @@ class home_model extends CI_Model
             return FALSE;
         }
     }
-	
-}
 
+}
 ?>

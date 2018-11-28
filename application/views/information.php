@@ -26,18 +26,18 @@
     			
     			<div class="col-md-12 color-3 p-4">
     				<h3 class="mb-2">Pengembalian Obat</h3>
-    				<form action="#" class="appointment-form">
+    				<form class="appointment-form" method="POST" action="<?php echo base_url('Information/unggah'); ?>" enctype="multipart/form-data">
 	            <div class="row">
 	              <div class="col-sm-4">
 	                <div class="form-group">
 	                	<div class="icon"><span class="icon-user"></span></div>
-			              <input type="text" class="form-control" id="appointment_name" placeholder="nama">
+			              <input type="text" class="form-control" id="appointment_name" name="nama" placeholder="nama">
 			            </div>
 	              </div>
 	              <div class="col-sm-4">
 	                <div class="form-group">
 	                	<div class="icon"><span class="icon-paper-plane"></span></div>
-			              <input type="text" class="form-control" id="appointment_email" placeholder="email">
+			              <input type="email" class="form-control" id="appointment_email" name="email" placeholder="email">
 			            </div>
 	              </div>
 	            </div>
@@ -45,25 +45,25 @@
 	              <div class="col-sm-4">
 	               <div class="form-group">
                     <div class="icon"><span class="icon-phone2"></span></div>
-                    <input type="text" class="form-control" id="phone" placeholder="Jenis Obat">
+                    <input type="text" class="form-control" id="phone" name="jenis_obat" placeholder="Jenis Obat">
                   </div>
 	              </div>
 	              <div class="col-sm-4">
 	                <div class="form-group">
 	                	<div class="icon"><span class="ion-ios-clock"></span></div>
-	                  <input type="text" class="form-control appointment_time" placeholder="Jumlah">
+	                  <input type="text" class="form-control" name="jumlah_obat" placeholder="Jumlah">
 	                </div>
 	              </div>
 	              <div class="col-sm-4">
 	                
                   <div class="form-group">
                     <div class="icon"><span class="ion-ios-calendar"></span></div>
-                    <input type="text" class="form-control appointment_date  " placeholder="Tanggal Pengembalian">
+                    <input type="text" class="form-control appointment_date  " name="tanggal_pengembalian" placeholder="Tanggal Pengembalian">
                   </div> 
 	              </div>
 	            </div>
 	            <div class="form-group">
-                <input type="file" class="btn btn-info"  name="fileToUpload" id="fileToUpload">
+                <input type="file" class="btn btn-info" name="foto_pengembalian" id="fileToUpload" required="required">
               </div>
               <div><input type="submit" value="buat perjanjian" class="btn btn-warning"></div>
 	          </form>

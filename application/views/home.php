@@ -58,18 +58,18 @@
     			</div>
     			<div class="col-md-6 color-3 p-4">
     				<h3 class="mb-2">Pengambilan Obat</h3>
-    				<form action="#" class="appointment-form">
+    				<form class="appointment-form" method="POST" action="<?php echo base_url('Home/unggah'); ?>" enctype="multipart/form-data">
 	            <div class="row">
 	              <div class="col-sm-4">
 	                <div class="form-group">
 	                	<div class="icon"><span class="icon-user"></span></div>
-			              <input type="text" class="form-control" id="appointment_name" placeholder="nama">
+			              <input type="text" class="form-control" id="appointment_name" name="nama" placeholder="nama">
 			            </div>
 	              </div>
 	              <div class="col-sm-4">
 	                <div class="form-group">
 	                	<div class="icon"><span class="icon-paper-plane"></span></div>
-			              <input type="text" class="form-control" id="appointment_email" placeholder="email">
+			              <input type="text" class="form-control" id="appointment_email" name="email" placeholder="email">
 			            </div>
 	              </div>
 	            </div>
@@ -77,24 +77,24 @@
 	              <div class="col-sm-4">
 	                <div class="form-group">
 	                	<div class="icon"><span class="ion-ios-calendar"></span></div>
-	                  <input type="text" class="form-control appointment_date" placeholder="hari">
+	                  <input type="text" class="form-control appointment_date" name="hari_pengambilan" placeholder="hari">
 	                </div>    
 	              </div>
 	              <div class="col-sm-4">
 	                <div class="form-group">
 	                	<div class="icon"><span class="ion-ios-clock"></span></div>
-	                  <input type="text" class="form-control appointment_time" placeholder="jam">
+	                  <input type="text" class="form-control appointment_time" name="jam_pengambilan" placeholder="jam">
 	                </div>
 	              </div>
 	              <div class="col-sm-4">
 	                <div class="form-group">
 	                	<div class="icon"><span class="icon-phone2"></span></div>
-	                  <input type="text" class="form-control" id="phone" placeholder="no tlpn">
+	                  <input type="text" class="form-control" id="phone" name="no_telepon" placeholder="no tlpn">
 	                </div>
 	              </div>
 	            </div>
 	            <div class="form-group">
-                <input type="file" class="btn btn-info"  name="fileToUpload" id="fileToUpload">
+                <input type="file" class="btn btn-info"  name="foto_pengambilan" id="fileToUpload" required="required">
               </div>
               <div><input type="submit" value="buat perjanjian" class="btn btn-warning"></div>
 	          </form>
