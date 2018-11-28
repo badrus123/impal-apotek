@@ -1,6 +1,9 @@
 <?php 
- $this->load->view('Admin/nav_admin');
-?>
+  if ($this->session->userdata('logged_in')=='Sudah Login') {
+    $this->load->view('Admin/nav_admin');
+  }
+
+ ?>
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">

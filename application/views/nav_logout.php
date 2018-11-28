@@ -40,11 +40,11 @@
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item"><a href="<?php echo base_url().'Promo/index'?>" class="nav-link">Promo</a></li>
-	          <li class="nav-item"><a href="<?php echo base_url().'Produk/index'?>" class="nav-link">Produk</a></li>
+	        <li class="nav-item"><a href="<?php echo base_url().'Promo/index'?>" class="nav-link">Promo</a></li>
+	        <li class="nav-item"><a href="<?php echo base_url().'Produk/index'?>" class="nav-link">Produk</a></li>
             <li class="nav-item"><a href="<?php echo base_url().'About/index'?>" class="nav-link">Tentang</a></li>
-						<li class="nav-item"><a href="<?php echo base_url().'Information/index'?>" class="nav-link">Informasi</a></li>
-            <a class="btn btn-primary" href="#">Logout</a>
+			<li class="nav-item"><a href="<?php echo base_url().'Information/index'?>" class="nav-link">Informasi</a></li>
+            <li class="nav-item"><a href="<?php echo base_url().'Akun/logout'?>" class="nav-link">logout</a></li>
           </ul>
 	      </div>
 	    </div>

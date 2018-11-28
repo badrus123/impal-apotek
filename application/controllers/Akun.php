@@ -16,17 +16,34 @@ class Akun extends CI_Controller
         $this->load->view('signin',$data);
     }
 
-    public function check(){
-        $data = $this->input->post(null,TRUE);
-        $login_data = $this->akun_model->check_user($data);
-        if($login_data){
-            $this->session->set_userdata('username',$login_data->username);
-            redirect('Home/index');
-        } else {
-            $this->session->set_flashdata('message','Gagal Login');
-            redirect('Akun/index');
+    public function cek_login()
+        {
+         $username = $this->input->post('username');
+         $password = $this->input->post('password');
+
+         $this->load->model('akun_model');
+         $login_akun = $this->akun_model->login_akun($username, $password);
+         $user = $login_akun->result()[0];
+         if ($login_akun) {
+                if ($login_akun->num_rows()==0) {                    
+                   redirect('Akun/index');  
+                }else {     
+                    $tht=$login_akun->result();          
+                    $sess_data = array(
+                    'logged_in' => "Sudah Login",
+                    'fullname' => $fullname->fullname,
+                    'email' =>    $tht[0]->email,
+                    'username' => $tht[0]->username,
+                    'password' => $tht[0]->password,
+                    'level' => "user",
+                    'User' => $item['user']
+                    );
+                    $this->session->set_userdata($sess_data);
+
+                    redirect('Home/index');
+                }
+          }
         }
-    }
 
     public function daftar_view()
     {
@@ -53,10 +70,11 @@ class Akun extends CI_Controller
     	$password = $this->input->post('password');
 
     	$data = array(
-    		"Fullname"=>$fullname,
-            "Email"=>$email,
-            "Username"=>$username,
-            "Password"=>$password,
+    		"fullname"=>$fullname,
+            "email"=>$email,
+            "username"=>$username,
+            "password"=>$password,
+            "foto_user"=> "https://3.bp.blogspot.com/-WPIEaxZnxzk/V2k-vQ57MlI/AAAAAAAAAUI/tAdp-dw_47IGJ9APcOJh2SSlvjB4vod4QCLcB/s1600/anonymousnih.jpg"
     	);
     	$this->akun_model->insert($data,'user');
     	

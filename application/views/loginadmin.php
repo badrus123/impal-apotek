@@ -22,41 +22,23 @@
 	
 	<div class="limiter">
 		<div class="container-login100">
-			<div class="login100-more" style="background-image: url('<?php echo base_url().'login/images/bg-01.jpg'?>');"></div>
+			<div class="login100-more" style="background-image: url('<?php echo base_url().'login/images/bg-01.jpg'?>"></div>
 
 			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
-				<form class="login100-form validate-form" method="POST" action="<?php echo base_url('Akun/add'); ?>" enctype="multipart/form-data">
+				<form class="login100-form validate-form" method="POST" action="<?php echo base_url('Login_admin/cek_login'); ?>" enctype="multipart/form-data">
 					<span class="login100-form-title p-b-59">
-						Daftar
+						Masuk
 					</span>
 
-					<div class="wrap-input100 validate-input" data-validate="Name is required">
-						<span class="label-input100">Nama Lengkap</span>
-						<input class="input100" type="text" name="fullname" placeholder="Nama lengkap...">
-						<span class="focus-input100"></span>
-					</div>
-
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<span class="label-input100">Email</span>
-						<input class="input100" type="text" name="email" placeholder="Alamat email...">
-						<span class="focus-input100"></span>
-					</div>
-
 					<div class="wrap-input100 validate-input" data-validate="Username is required">
-						<span class="label-input100">Username</span>
-						<input class="input100" type="text" name="username" placeholder="Username...">
+						<span class="label-input100">Id admin</span>
+						<input class="input100" type="text" name="id_admin" placeholder="Id admin..">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Password is required">
 						<span class="label-input100">Password</span>
-						<input class="input100" type="text" name="password" placeholder="*************">
-						<span class="focus-input100"></span>
-					</div>
-
-					<div class="wrap-input100 validate-input" data-validate = "Repeat Password is required">
-						<span class="label-input100">Ulangi Password</span>
-						<input class="input100" type="text" name="repeat-pass" placeholder="*************">
+						<input class="input100" type="text" name="pass" placeholder="*************">
 						<span class="focus-input100"></span>
 					</div>
 
@@ -64,29 +46,17 @@
 						<div class="contact100-form-checkbox">
 							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
 							<label class="label-checkbox100" for="ckb1">
-								<span class="txt1">
-									Saya setuju dengan
-									<a href="#" class="txt2 hov1">
-										Peraturan sebagai pengguna
-									</a>
-								</span>
 							</label>
 						</div>
-						
 					</div>
 
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
 							<button class="btn btn-primary login100-form-btn">
-								Daftar
+								Masuk
 							</button>
 						</div>
-
-						<a href="<?php echo base_url().'Akun/index'?>" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
-							Sudah punya akun?
-							<i class="fa fa-long-arrow-right m-l-5"></i>
-						</a>
 					</div>
 				</form>
 			</div>

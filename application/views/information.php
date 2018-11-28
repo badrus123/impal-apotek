@@ -1,6 +1,11 @@
 <?php 
- $this->load->view('nav');
-?>
+  if ($this->session->userdata('logged_in')=='Sudah Login') {
+    $this->load->view('nav_logout');
+  }else{
+    $this->load->view('nav');
+  }
+ 
+ ?>
 
 
 <section class="home-slider owl-carousel">

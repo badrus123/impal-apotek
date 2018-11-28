@@ -43,7 +43,6 @@
 	          <li class="nav-item"><a href="<?php echo base_url().'Promo/index'?>" class="nav-link">Promo</a></li>
 	          <li class="nav-item"><a href="<?php echo base_url().'Produk/index'?>" class="nav-link">Produk</a></li>
             <li class="nav-item"><a href="<?php echo base_url().'About/index'?>" class="nav-link">Tentang</a></li>
-						<li class="nav-item"><a href="<?php echo base_url().'Information/index'?>" class="nav-link">Informasi</a></li>
             <div class="dropdown">
 								<li class="nav-item"><a href="#" class="nav-link">Masuk</a></li>
 								<div class="dropdown-content">
