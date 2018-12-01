@@ -55,7 +55,7 @@
                     <td><?php echo $value->promo_obat ?></td>
                     <td><?php echo $value->sisa_obat ?></td>
                     <td><?php echo $value->produk_obat ?></td>
-                    <td><button class="btn btn-danger"><i class="fa fa-trash-o"></i></button></td>
+                    <td><a href="<?php echo site_url("TableObat_admin/hapus/".$value->id_obat) ?>" class="btn btn-danger"><i class="fa fa-trash-o"></i></a></td>
                     <td><button class="btn btn-primary" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil-square-o"></i></button></td>
                   </tr>
                   <?php } ?>
@@ -79,6 +79,7 @@
         
         <!-- Modal body -->
         <div class="modal-body">
+        <form method="POST" action="<?php echo site_url("TableObat_admin/editData/".$value->id_obat) ?>" enctype="multipart/form-data"> 
           <div class="col-md-6">
               <div>
                   <h4>id Obat</h4>
@@ -88,14 +89,14 @@
                   <h4>Nama Obat</h4>
                   <input  class="form-control select2" type="text" name="nama_obat" placeholder="nama obat" style=" width: 100%;">
                </div>
-                            <div class="form-group">
+              <div class="form-group">
                   <label><h4>Tipe Obat</h4></label>
                       <select class="form-control select2" name="type_obat" style="width: 100%;">
                       <option value="PIL">PIL</option>
                       <option value="Sirup">Sirup</option>
                       <option value="Tablet">Tablet</option>
                       <option value="None">None</option>
-                  </
+                      </select>
               </div>
               <div>
                   <h4>Harga Obat</h4>
@@ -115,10 +116,6 @@
                 <h4>Deskripsi Obat</h4>
                 <textarea class="form-control select2" rows="5" name="deskripsi_obat" id="comment" placeholder="Tulis Deskripsi Obat"></textarea>
             </div>
-            <div>
-                <h4>Foto Obat</h4>
-                <input type="file" name="image">
-            </div>
             <div class="form-group">
                 <label><h4>Produk Obat</h4></label>
                     <select class="form-control select2" name="produk_obat" style="width: 100%;">
@@ -134,9 +131,8 @@
                 </br>
                 <input class="form-control select2 btn btn-primary" type="submit" value="submit" >
             </div>
-            </form>
           </div>
-        </div>
+        </form>
         
         <!-- Modal footer -->
         <div class="modal-footer">
