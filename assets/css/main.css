@@ -52,6 +52,12 @@
 	color: #13AAD8;
 }
 
+.center{
+    width: 150px;
+      margin: 40px auto;
+      
+    }
+
 .home-sub-text{
 	font-size: 30px;
 	width: 45%;

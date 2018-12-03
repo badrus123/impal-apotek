@@ -67,7 +67,7 @@
                     <h6 class="mt-3 mb-4">Discount Obat : <b><?php echo $value->promo_obat ?></b></h6>
 				</div>
             </div>
-            <a class="btn btn-lg btn-help-danus w-100 mt-3" href="#">Masukan Keranjang</a>
+            <a class="btn btn-lg btn-help-danus w-100 mt-3" href="<?php echo site_url("keranjang/index/".$value->id_obat) ?>">Masukan Keranjang</a>
         </div>
 	</div>
  
@@ -94,6 +94,6 @@
 
     
     
-    <?php 
+<?php 
  $this->load->view('footer');
 ?>
