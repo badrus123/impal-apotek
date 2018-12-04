@@ -11,7 +11,14 @@ class Pengembalian_model extends CI_Model{
     {
         parent::__construct();
     }
+    public function get_data()
+	{
+		$this->db->select('*');
+        $this->db->from('pengembalian_obat');
 
+        $query = $this->db->get();
+        return $query;
+	}
     function input_data($data,$table){
         $this->db->insert($table,$data);
     }
@@ -37,6 +44,7 @@ class Pengembalian_model extends CI_Model{
             return FALSE;
         }
     }
+
 
 }
 ?>

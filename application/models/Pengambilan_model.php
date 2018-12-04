@@ -38,5 +38,7 @@ class Pengambilan_model extends CI_Model{
         }
     }
 
+
+
 }
 ?>

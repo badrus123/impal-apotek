@@ -362,10 +362,16 @@
             </span>
           </a>
         </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-folder"></i> <span>File Obat</span>
+        <li>
+          <a href="<?php echo base_url().'Pengembalian_obat_admin/index'?>">
+            <i class="fa fa-folder"></i> <span>File Pengembalian Obat</span>
           </a>
+      </li>
+      <li>
+          <a href="<?php echo base_url().'Transaksi_admin/index'?>">
+            <i class="fa fa-folder"></i> <span>File Transaksi Jual Beli Obat</span>
+          </a>
+      </li>
           
     </section>
     <!-- /.sidebar -->

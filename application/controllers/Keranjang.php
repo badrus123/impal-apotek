@@ -18,17 +18,17 @@ class Keranjang extends CI_Controller {
                         );       
                 $this->load->view('keranjang',$data);
         }
-        
-        public function add($id_obat){
-                $item['obat'] = $this->keranjang_model->get_data($id_obat);
+
+        public function add(){
                 $order = $this->input->post('order');
-                $harga_total = $order * 10000;
-                $id_obat = $item['obat'];
+                $harga = $this->input->post('harga_obat');
+                $harga_obat = $harga * $order;
+                $id_obat = $this->input->post('id_obat');;
                 $data = array(
-                        "order"=>$order,
-                        "harga_total"=>$harga_total,
-                        "id_obat"=>$id_obat['obat'] );
-                $this->keranjang_model->insert_data($data,'transaksi');
+                        "jumlah"=>$order,
+                        "harga_total"=>$harga_obat,
+                        "id_obat"=>$id_obat );
+                $this->keranjang_model->input_data($data,'transaksi');
                 
                 redirect('Home/index');
         }

@@ -42,6 +42,8 @@
           <form method="POST" action="<?php echo base_url('Keranjang/add'); ?>" enctype="multipart/form-data">
           <tr>
               <td><img src="<?php echo base_url().'obat/'.$value->image ?>" height="200" width="200" ></td>
+              <input type="hidden" value="<?php echo $value->id_obat ?>" name="id_obat">
+              <input type="hidden" value="<?php echo $value->harga_obat ?>" name="harga_obat">
             <td><h1><a href="html.html" style="color: black; text-decoration: none;" ><?php echo 'Obat '.$value->nama_obat ?></a></h1><br>
               <p><?php echo $value->deskripsi_obat ?></p><br>
               <h2><?php echo $value->harga_obat ?></h2></td>
@@ -53,7 +55,7 @@
     </div>
     <div class="container" style="margin-top: 80px">
      <div align="center">
-      <input type="submit" class="btn btn-primary btn-block"  style="background-color: #FE642E; width: 1000px; height: 70px" value="Lanjut Pembayaran" >
+      <input type="submit" class="btn btn-primary"  style="width: 1000px; height: 70px" value="Lanjut Pembayaran" >
      </div>
     </div>
     <?php } ?>
